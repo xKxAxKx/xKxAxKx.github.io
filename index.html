@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>xKxAxKx</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>xKxAxKx</h1>
-    <h2>Author</h2>
-      <p>xKxAxKx / Hiromasa Kakutani</p>
-      <p>ハンドルネームの読み方は"kaku"。</p>
-    <h2>About</h2>
-      <p>ソフトウェアエンジニアをやっています。主にPythonとJavaScriptを書いています。その他、Ruby、PHP等。</p>
-      <p>ストリートスナップを中心に写真を撮り、たまにインターネット上にアップロードしています。</p>
-      <p>音楽が好きです。Punk、Emo、Hardcore、Rock'n Roll、HIP HOP等。最近はFuture bassにも関心があります。</p>
-      <p>ヴィッセル神戸と阪神タイガースを応援しています。</p>
-      <p>その他の関心事はアニメ、VTuber、バスケットボール、プロレス、ラーメン、読書、映画、飲酒、などなど。</p>
-    <h2>Link</h2>
-    <dl>
-      <dt><a href="https://twitter.com/xKxAxKx">@xKxAxKx</a></dt>
-      <dd>Twitter</dd>
-      <dt><a href="https://www.instagram.com/xkxaxkx/">Instagram</a></dt>
-      <dd>スナップのっけてるインスタ</dd>
-      <dt><a href="http://xkxaxkx.hatenablog.com/">K Diary</a></dt>
-      <dd>雑記を中心としたBlog</dd>
-      <dt><a href="https://github.com/xKxAxKx">github/xKxAxKx</a></dt>
-      <dd>公開リポジトリ</dd>
-      <dt><a href="https://qiita.com/xKxAxKx">Qiita</a></dt>
-      <dd>技術ネタ</dd>
-      <dt><a href="http://kktnhrms.tumblr.com/">there is light that never goes out</a></dt>
-      <dd>写真をアップロードしているtumblr</dd>
-      <dt><a href="http://mifoaefa.tumblr.com/">りぶ☆ろぐ</a></dt>
-      <dd>リブログ用のtumblr</dd>
-      <dt><a href="https://booklog.jp/users/kktnhrms">ブクログ</a></dt>
-      <dd>読んだ本リスト</dd>
-      <dt><a href="https://filmarks.com/users/xKxAxKx">Filmarks</a></dt>
-      <dd>見た映画リスト</dd>
-      <dt><a href="http://amzn.asia/2EdVTIt">Amazon Wishlist</a></dt>
-      <dd>何かください</dd>
-    </dl>
+    <div id="nescss">
+      <header :class="{ sticky: scrollPos > 50 }">
+        <div class="container">
+          <div class="nav-brand">
+            <h1><i class="nes-icon heart"></i>xKxAxKx</h1>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <main class="main-content">
+          <section class="topic">
+            <h2 id="author"><a href="#author">#</a>Auther</h2>
+            <p>xKxAxKx / Hiromasa Kakutani</p>
+            <p>Please call me "kaku"!</p>
+          </section>
+
+          <section class="topic">
+            <h2 id="about"><a href="#about">#</a>About</h2>
+            <p>I work as a software engineer. I mainly write Python and JavaScript. In addition, I write Ruby and PHP.</p>
+            <p>I like music such as Punk, Emo, Hardcore, Rock'n Roll, HIP HOP etc.</p>
+            <p>I support Vissel Kobe (football) and Hanshin Tigers (baseball).</p>
+            <p>Other interests are animation, VTuber, basketball, pro wrestling, ramen, reading, movies, drinking.</p>
+          </section>
+
+          <section class="icon-list">
+            <h2 id="about"><a href="#sns">#</a>Links</h2>
+            <a href="https://twitter.com/xKxAxKx" target="_blank"><i class="nes-icon twitter is-medium"></i></a>
+            <a href="https://www.instagram.com/xkxaxkx/" target="_blank"><i class="nes-icon instagram is-medium"></i></a>
+            <a href="https://github.com/xKxAxKx" target="_blank"><i class="nes-icon github is-medium"></i></a>
+            <section class="nes-container with-title">
+              <h3 class="title">Others</h3>
+              <p><a href="https://qiita.com/xKxAxKx" target="_blank">Qiita</a></p>
+              <p><a href="http://xkxaxkx.hatenablog.com" target="_blank">Blog</a></p>
+              <p><a href="https://booklog.jp/users/kktnhrms" target="_blank">Booklog</a></p>
+              <p><a href="https://filmarks.com/users/xKxAxKx" target="_blank">Filmarks</a></p>
+              <p><a href="http://kktnhrms.tumblr.com" target="_blank">Tumblr(Photo)</a></p>
+              <p><a href="http://mifoaefa.tumblr.com" target="_blank">Tumblr(Reblog)</a></p>
+              <p><a href="http://amzn.asia/2EdVTIt" target="_blank">Amazon Wishlis</a></p>
+            </section>
+          </section>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
